@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Noto+Sans+KR&display=swap');
+
+body{font-family: "Montserrat", "Noto Sans KR", sans-serif !important;}
+
+.swiper-side-left,
+.swiper-side-right{width: 190px;overflow: visible;}
+.Side .swiper-button-next{width: 100%;height: 40px;top: auto;left: 0;bottom: -52px;}
+.Side .swiper-button-next::after{display: none;}
+.Side .swiper-pagination-fraction{bottom: -40px;right: 18px;}
+
+.More::after{position: absolute;right: 0px;top: 8px;content: '';width: 7px;height: 7px;border-top: 1px solid #9ca3af;border-right: 1px solid #9ca3af;transform: rotate(45deg);}
+.swiper-sale .swiper-button-prev{left: -9px;}
+.swiper-sale .swiper-button-next{right: -9px;}
+.swiper-sale .swiper-button-prev,
+.swiper-sale .swiper-button-next{height: 100px;background: #fff;top: 22px;}
+.swiper-sale .swiper-button-next:after, 
+.swiper-sale .swiper-button-prev:after{font-size: 15px;color: #d6d6d6;font-weight: 900;}
+
+footer::before,
+footer::after{content: "";display: block;position: absolute;top: 53px;left: 0;width: 100%;height: 1px;background: #ddd;}
+footer::after{top: auto;bottom: 39px;}
+
+/* 반응형 태블릿 */
+@media screen and (max-width:1024px) {
+    .Rank .swiper-rank .swiper-slide:nth-child(6),
+    .Rank .swiper-rank .swiper-slide:nth-child(7){display: none;}
+    .Rank .tab_wrap ul li:nth-child(6),
+    .Rank .tab_wrap ul li:nth-child(7){display: none;}
+}
+
+/* 반응형 모바일 */
+@media screen and (max-width:768px) {
+    .Rank .swiper-rank .swiper-slide:nth-child(4),
+    .Rank .swiper-rank .swiper-slide:nth-child(5){display: none;}
+    .Rank .tab_wrap ul li:nth-child(4),
+    .Rank .tab_wrap ul li:nth-child(5){display: none;}
+    .swiper-sale .swiper-button-prev,
+    .swiper-sale .swiper-button-next{display: none;}
+
+    footer::before,
+    footer::after{display: none;}
+}

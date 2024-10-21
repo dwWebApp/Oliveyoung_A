@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../css/contents.css">
+    <title>올리브영 온라인몰</title>
+</head>
+<body>
+    <header>
+        <div class="flex justify-center w-full border-b border-b-zinc-300">
+            <img src="../images/img_header.jpg" alt="헤더_PC" class="hidden md:block">
+            <img src="../images/img_m_header.jpg" alt="헤더_MO" class="block md:hidden">
+        </div>
+    </header>
+    
+    <main class="overflow-x-hidden">
+        <!-- 플로팅 메뉴 -->
+        <div class="relative mx-auto w-[1080px] [&>.Side]:absolute [&>.Side]:bg-white [&>.Side]:border [&>.Side]:border-gray-300 [&>.Side]:rounded-lg hidden xl:block">
+            <div class="p-4 Side w-[224px] h-[488px] top-12 left-[-310px]">
+                <div><img src="../images/side_left_tit.png" alt="핫인기세일"></div>
+                <div class="swiper swiper-side-left">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../images/side_item01.jpg" alt="핫인기세일 상품-01"></div>
+                        <div class="swiper-slide"><img src="../images/side_item02.jpg" alt="핫인기세일 상품-02"></div>
+                    </div>
+                    <div class="justify-start pl-4 text-xs text-gray-900 border border-gray-300 rounded swiper-button-next">다른상품 추천해드릴게요</div>
+                    <div class="top-auto left-auto w-auto text-xs swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="p-4 Side w-[224px] h-[488px] top-12 right-[-310px]">
+                <div><img src="../images/side_right_tit.png" alt="증정/하나 더"></div>
+                <div class="swiper swiper-side-right">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../images/side_item02.jpg" alt="증정/하나 더 상품-01"></div>
+                        <div class="swiper-slide"><img src="../images/side_item01.jpg" alt="증정/하나 더 상품-02"></div>
+                    </div>
+                    <div class="justify-start pl-4 text-xs text-gray-900 border border-gray-300 rounded swiper-button-next">다른상품 추천해드릴게요</div>
+                    <div class="top-auto left-auto w-auto text-xs swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //플로팅 메뉴 -->
+        
+        <!-- 404 타이틀 -->
+        <div class="hidden w-full md:block lg:h-[400px] xl:h-[493px] bg-cover bg-[url('/src/images/area_404_bg.png')] bg-no-repeat bg-center">
+            <img src="../images/area_404_img.png" alt="404 타이틀_PC" class="w-4/5 mx-auto xl:w-auto">
+        </div>
+        <div class="block w-full md:hidden">
+            <img src="../images/area_404_img_mo.png" alt="404 타이틀_MO" class="mx-auto">
+        </div>
+        <!-- //404 타이틀 -->
+        
+        <!-- 급상승 검색어 & 할인 상품 -->
+        <div class="px-4 mx-auto bg-white rounded-xl mb-9 md:p-7 md:mb-0 lg:mb-14 w-full md:w-[96%] xl:w-[1080px] min-h-fit md:min-h-[400px] mt-0 md:mt-[-15px] lg:mt-[-35px] xl:mt-[-88px]">
+            <div class="flex flex-col w-full h-auto Rank md:flex-row">
+                <div class="swiper swiper-rank w-full md:w-[660px] h-auto">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-slider="1"><img src="../images/slide01.png" alt="급상승 검색어 상품-01"></div>
+                        <div class="swiper-slide" data-slider="2"><img src="../images/slide02.png" alt="급상승 검색어 상품-02"></div>
+                        <div class="swiper-slide" data-slider="3"><img src="../images/slide03.png" alt="급상승 검색어 상품-03"></div>
+                        <div class="swiper-slide" data-slider="4"><img src="../images/slide01.png" alt="급상승 검색어 상품-04"></div>
+                        <div class="swiper-slide" data-slider="5"><img src="../images/slide02.png" alt="급상승 검색어 상품-05"></div>
+                        <div class="swiper-slide" data-slider="6"><img src="../images/slide03.png" alt="급상승 검색어 상품-06"></div>
+                        <div class="swiper-slide" data-slider="7"><img src="../images/slide01.png" alt="급상승 검색어 상품-07"></div>
+                    </div>
+                </div>
+                <div class="pt-4 tab_wrap md:pt-2 md:pl-7 w-full md:w-[360px] h-auto">
+                    <div class="items-center justify-between hidden p-2 mb-5 border-b md:flex border-b-zinc-300">
+                        <span class="text-lg font-bold text-black">급상승 검색어</span>
+                        <span class="text-sm text-gray-600">16:10시 기준</span>
+                    </div>
+                    <ul class="[&>li]:flex [&>li]:items-center [&>li]:text-sm [&>li]:text-gray-500 [&>li]:font-medium [&>li]:px-5 [&>li]:py-1.5 xl:[&>li]:py-2 [&>li]:cursor-pointer [&>li>span]:text-lg [&>li>span]:text-gray-400 [&>li>span]:font-semibold [&>li>span]:mr-3 [&>li.active]:border [&>li.active]:border-black [&>li.active]:rounded-md [&>li.active]:text-black [&>li.active>span]:text-black">
+                        <li class="tab active" data-tab="1">
+                            <span class="">1</span>마스크팩
+                        </li>
+                        <li class="tab" data-tab="2">
+                            <span class="">2</span>틴트
+                        </li>
+                        <li class="tab" data-tab="3">
+                            <span class="">3</span>피부진정
+                        </li>
+                        <li class="tab" data-tab="4">
+                            <span class="">4</span>선크림
+                        </li>
+                        <li class="tab" data-tab="5">
+                            <span class="">5</span>파운데이션
+                        </li>
+                        <li class="tab" data-tab="6">
+                            <span class="">6</span>인텐시브 크림
+                        </li>
+                        <li class="tab" data-tab="7">
+                            <span class="">7</span>플럼핑 립 틴트
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-6 mt-5 border-t lg:pt-10 lg:mt-10 Sale border-t-zinc-300">
+                <div class="flex items-center justify-between mb-4 lg:mb-10">
+                    <span class="text-base font-semibold text-black md:text-xl">절찬 할인 상품.ZIP</span>
+                    <a href="#" class="relative hidden pr-3 mr-4 text-base font-normal text-gray-400 More md:block">더보기</a>
+                </div>
+                <div class="swiper swiper-sale w-full max-w-[980px] h-auto md:h-[100px] px-0 lg:px-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../images/sale_item01.png" alt="할인 상품-01" class="hidden md:block">
+                            <img src="../images/sale_mo_item01.jpg" alt="모바일 할인 상품-01" class="block md:hidden">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/sale_item02.png" alt="할인 상품-02" class="hidden md:block">
+                            <img src="../images/sale_mo_item02.jpg" alt="모바일 할인 상품-02" class="block md:hidden">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/sale_item03.png" alt="할인 상품-03" class="hidden md:block">
+                            <img src="../images/sale_mo_item01.jpg" alt="모바일 할인 상품-03" class="block md:hidden">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/sale_item01.png" alt="할인 상품-04" class="hidden md:block">
+                            <img src="../images/sale_mo_item02.jpg" alt="모바일 할인 상품-04" class="block md:hidden">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //급상승 검색어 & 할인 상품 -->     
+    </main>
+
+    <footer class="relative bg-white">
+        <div class="flex justify-center w-full border-t-2 border-t-zinc-400">
+            <img src="../images/img_footer.jpg" alt="푸터_PC" class="hidden md:block">
+            <img src="../images/img_m_footer.jpg" alt="푸터_MO" class="block md:hidden">
+        </div>
+    </footer>
+
+    <script>
+        // 급상승 검색어
+        var swiper = new Swiper('.swiper-rank', {
+            effect : 'fade',
+            autoplay: {
+                delay: 5000, 
+                disableOnInteraction: false
+            },
+            on: {
+                slideChange: function() {
+                    const activeIndex = swiper.activeIndex;
+                    document.querySelector('.tab.active').classList.remove('active');
+                    const correspondingTab = document.querySelector(`.tab[data-tab="${activeIndex + 1}"]`);
+                    correspondingTab.classList.add('active');
+                }
+            }
+        });
+
+        const tab_wrap = document.querySelectorAll('.tab');
+        
+        tab_wrap.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const tabIndex = this.getAttribute('data-tab') - 1;
+                swiper.slideTo(tabIndex);
+                document.querySelector('.tab.active').classList.remove('active');
+                this.classList.add('active');
+            });
+        });
+
+        // 할인 상품
+        var swiperSale = new Swiper('.swiper-sale', {
+            slidesPerView : 2.5,
+            spaceBetween : 8,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints:{
+                768 : {
+                    slidesPerView : 3,
+                    spaceBetween : 20,
+                }
+            },
+        });
+
+        // 플로팅 메뉴
+        var floatPosition = parseInt($(".Side").css('top'));
+        var footerOffset = $('footer').offset().top;
+        var sideHeight = $(".Side").outerHeight();
+        var offsetBuffer = 180;
+
+        $(window).scroll(function() {
+            var currentTop = $(window).scrollTop();
+            var bannerTop = currentTop + floatPosition;
+
+            if (bannerTop + sideHeight > footerOffset - offsetBuffer) {
+                bannerTop = footerOffset - sideHeight - offsetBuffer;
+            }
+
+            $(".Side").stop().animate({
+                "top" : bannerTop + "px"
+            }, 300);
+        }).scroll();
+
+        // 플로팅 메뉴 좌측
+        var swiperLeft = new Swiper('.swiper-side-left', {
+            effect : 'fade',
+            slidesPerView : 1,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+        });
+
+        // 플로팅 메뉴 우측
+        var swiperRight = new Swiper('.swiper-side-right', {
+            effect : 'fade',
+            slidesPerView : 1,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+        });
+    </script>
+</body>
+</html>
