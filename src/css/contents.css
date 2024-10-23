@@ -23,6 +23,10 @@ footer::before,
 footer::after{content: "";display: block;position: absolute;top: 53px;left: 0;width: 100%;height: 1px;background: #ddd;}
 footer::after{top: auto;bottom: 39px;}
 
+.out-bg{position: relative;}
+.out-bg::before{content: "";display: block;width: 5px;height: 404px;background-color: #ffd23e;position: absolute;left: -2px;top: 0;}
+.out-bg::after{content: "";display: block;width: 502px;height: 5px;background-color: #ffd23e;position: absolute;left: 0;bottom: -2px;}
+
 /* 반응형 태블릿 */
 @media screen and (max-width:1024px) {
     .Rank .swiper-rank .swiper-slide:nth-child(6),
