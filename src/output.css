@@ -578,6 +578,18 @@ video {
   top: auto;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-\[375px\] {
+  top: 375px;
+}
+
+.top-\[513px\] {
+  top: 513px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -607,12 +619,12 @@ video {
   margin-top: 0px;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .mt-6 {
@@ -644,6 +656,10 @@ video {
   min-height: fit-content;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-\[1080px\] {
   width: 1080px;
 }
@@ -660,20 +676,12 @@ video {
   width: 100%;
 }
 
-.w-4\/5 {
-  width: 80%;
-}
-
-.w-3\/4 {
-  width: 75%;
+.max-w-\[428px\] {
+  max-width: 428px;
 }
 
 .max-w-\[980px\] {
   max-width: 980px;
-}
-
-.max-w-\[428px\] {
-  max-width: 428px;
 }
 
 .flex-col {
@@ -757,20 +765,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/src\/images\/area_404_bg\.png\'\)\] {
-  background-image: url('/src/images/area_404_bg.png');
-}
-
 .bg-cover {
   background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .p-2 {
@@ -859,11 +855,6 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.before\:contents::before {
-  content: var(--tw-content);
-  display: contents;
-}
-
 @media (min-width: 768px) {
   .md\:mb-0 {
     margin-bottom: 0px;
@@ -893,6 +884,10 @@ video {
     min-height: 400px;
   }
 
+  .md\:w-2\/5 {
+    width: 40%;
+  }
+
   .md\:w-\[360px\] {
     width: 360px;
   }
@@ -903,14 +898,6 @@ video {
 
   .md\:w-\[96\%\] {
     width: 96%;
-  }
-
-  .md\:w-1\/3 {
-    width: 33.333333%;
-  }
-
-  .md\:w-2\/5 {
-    width: 40%;
   }
 
   .md\:flex-row {
@@ -956,10 +943,6 @@ video {
     height: 400px;
   }
 
-  .lg\:w-1\/3 {
-    width: 33.333333%;
-  }
-
   .lg\:w-auto {
     width: auto;
   }
@@ -983,8 +966,8 @@ video {
     display: block;
   }
 
-  .xl\:h-\[493px\] {
-    height: 493px;
+  .xl\:h-\[463px\] {
+    height: 463px;
   }
 
   .xl\:w-\[1080px\] {
@@ -1007,6 +990,16 @@ video {
 .\[\&\>\.Side\]\:border-gray-300>.Side {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.\[\&\>\.Side\]\:border-gray-100>.Side {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+
+.\[\&\>\.Side\]\:border-gray-200>.Side {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .\[\&\>\.Side\]\:bg-white>.Side {

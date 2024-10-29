@@ -7,6 +7,7 @@ body{font-family: "Montserrat", "Noto Sans KR", sans-serif !important;}
 
 .swiper-side-left,
 .swiper-side-right{width: 190px;overflow: visible;}
+.Side{box-shadow: 10px 10px 20px 0px #00000033;border-color: #eee;}
 .Side .swiper-button-next{width: 100%;height: 40px;top: auto;left: 0;bottom: -52px;}
 .Side .swiper-button-next::after{display: none;}
 .Side .swiper-pagination-fraction{bottom: -40px;right: 18px;}
@@ -20,14 +21,12 @@ body{font-family: "Montserrat", "Noto Sans KR", sans-serif !important;}
 .swiper-sale .swiper-button-prev:after{font-size: 15px;color: #d6d6d6;font-weight: 900;}
 
 footer::before,
-footer::after{content: "";display: block;position: absolute;top: 53px;left: 0;width: 100%;height: 1px;background: #ddd;}
+footer::after{content: "";display: block;position: absolute;top: 53px;left: 0;width: 100%;height: 1px;background: #ddd;z-index: 20;}
 footer::after{top: auto;bottom: 39px;}
+footer div::before{content: "";display: block;position: absolute;top: 2px;left: 0;width: 100%;height: 51px;background: #f9f9f9;}
+footer div img{z-index: 10;}
 
-.title-bg{background: url('../images/area_404_bg.png') no-repeat center;}
-
-.out-bg{position: relative;}
-.out-bg::before{content: "";display: block;width: 5px;height: 404px;background-color: #ffd23e;position: absolute;left: -2px;top: 0;}
-.out-bg::after{content: "";display: block;width: 502px;height: 5px;background-color: #ffd23e;position: absolute;left: 0;bottom: -2px;}
+.title-bg{background: url('../images/area_404_bg.jpg') no-repeat center;}
 
 /* 반응형 태블릿 */
 @media screen and (max-width:1024px) {
